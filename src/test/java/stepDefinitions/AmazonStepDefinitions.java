@@ -18,6 +18,10 @@ public class AmazonStepDefinitions {
 
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
     }
+
+
+
+
     @Then("kullanici Nutella icin arama yapar")
     public void kullanici_nutella_icin_arama_yapar() {
 
@@ -27,8 +31,10 @@ public class AmazonStepDefinitions {
     public void sonuclarin_nutella_icerdigini_test_eder() {
         Assert.assertTrue(amazonPage.sonucYazisi.getText().contains("Nutella"));
     }
-    @Then("sayfayi kapatir")
-    public void sayfayi_kapatir() {
+
+
+    @Then("Sayfayi kapatir")
+    public void Sayfayi_kapatir() {
         Driver.closeDriver();
     }
 
@@ -50,6 +56,8 @@ public class AmazonStepDefinitions {
     public void kullanici_java_icin_arama_yapar() {
         amazonPage.aramaKutusu.sendKeys("Java" + Keys.ENTER);
     }
+
+
     @Then("sonuclarin Java icerdigini test eder")
     public void sonuclarin_java_icerdigini_test_eder() {
         Assert.assertTrue(amazonPage.sonucYazisi.getText().contains("Java"));

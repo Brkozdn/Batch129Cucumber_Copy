@@ -5,8 +5,8 @@
 
 
   # kullanici "guruUrl" anasayfasinda
-  # "Company" sutunundaki tum degerleri yadirir
-  # sayfayi kapatir
+  # "Company" basligi altindaki tum degerleri yazdirir
+  # Sayfayi kapatir
 
 #https://demo.guru99.com/test/web-table-element.php
 
@@ -17,5 +17,5 @@
   Scenario: TC istenen sutunu yazdirma
     
     Given kullanici "guruUrl" anasayfasinda
-    Then "Company" basligi altindaki tum degerleri yadirir
-    And sayfayi kapatir
+    Then "Company" basligi altindaki tum degerleri yazdirir
+    And Sayfayi kapatir

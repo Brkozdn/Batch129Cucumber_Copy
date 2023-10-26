@@ -17,7 +17,7 @@ public class GuruPage {
 
 
 
-    @FindBy(xpath = "//thead//tr[1]//th")
+    @FindBy(xpath = "(//table)[2]//thead//tr[1]//th")
     public List<WebElement> sutunBasliklari;
 
 

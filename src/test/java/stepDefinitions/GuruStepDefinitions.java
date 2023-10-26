@@ -12,10 +12,10 @@ public class GuruStepDefinitions {
 
     GuruPage guruPage = new GuruPage();
 
-    @Then("{string} basligi altindaki tum degerleri yadirir")
-    public void basligi_altindaki_tum_degerleri_yadirir(String istenenbaslikIsmi) {
+    @Then("{string} basligi altindaki tum degerleri yazdirir")
+    public void basligi_altindaki_tum_degerleri_yazdirir(String istenenbaslikIsmi) {
 
-        int istenenSutunBaslikidx=-3;
+        int istenenSutunBaslikidx=0;
 
 
         for (int i = 0; i <guruPage.sutunBasliklari.size() ; i++) {
@@ -26,7 +26,10 @@ public class GuruStepDefinitions {
         }
 
 
-        List<WebElement> sutunElementleri = Driver.getDriver().findElements(By.xpath("//tbody//tr//td["+(istenenSutunBaslikidx+1)+"]"));
+
+
+        List<WebElement> sutunElementleri =
+          Driver.getDriver().findElements(By.xpath("(//table)[2]//tbody//tr//td["+(istenenSutunBaslikidx+1)+"]"));
 
         for (WebElement each :sutunElementleri) {
             System.out.println(each.getText());

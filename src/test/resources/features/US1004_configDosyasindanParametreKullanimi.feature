@@ -4,7 +4,7 @@
   # kullanici "amazonUrl" anasayfasinda
   # kullanici 3 sn bekler
   # url'in "amazon" icerdigini test eder
-  # sayfayi kapatir
+  # Sayfayi kapatir
 
 
 
@@ -20,6 +20,6 @@
     Given kullanici "amazonUrl" anasayfasinda
     Then kullanici 3 sn bekler
     And url'in "amazon" icerdigini test eder
-    Then sayfayi kapatir
+    Then Sayfayi kapatir
 
 

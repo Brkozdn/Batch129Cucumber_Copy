@@ -5,12 +5,12 @@
 
   # kullanici Nutella icin arama yapar
   # sonuclarin Nutella icerdigini test eder
-  # sayfayi kapatir
+  # Sayfayi kapatir
 
 
   # kullanici Java icin arama yapar
   # sonuclarin Java icerdigini test eder
-  # sayfayi kapatir
+  # Sayfayi kapatir
 
 
 
@@ -26,18 +26,18 @@
 
 
 
-    Scenario: TC04 kullanici amazonda nutella aratir
+    Scenario: TC04 kullanici amazonda Nutella aratir
 
       Given kullanici Nutella icin arama yapar
       Then sonuclarin Nutella icerdigini test eder
-      And sayfayi kapatir
+      And Sayfayi kapatir
 
 
 
 
 
-    Scenario: TC05 kullanici amazonda java aratir
+    Scenario: TC05 kullanici amazonda Java aratir
 
         Given kullanici Java icin arama yapar
         Then sonuclarin Java icerdigini test eder
-        And sayfayi kapatir
+        And Sayfayi kapatir

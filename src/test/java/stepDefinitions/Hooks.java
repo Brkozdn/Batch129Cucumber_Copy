@@ -7,9 +7,17 @@ import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
 public class Hooks {
-// failed olan raporun fotografını görüntüleyebilmek için
+
+
+    // Her scenariodan sonra test sonucunu kontrol edip faild olan scenario'lar icin
+    // screeanshot alması amacıyla @After method'u kullanacagız.
+
+    // Faild olan scenarionun screeanshot'ını ropora ekleyecek.
+
+
+
     @After
-    public void tearDown(Scenario scenario){
+    public void tearDown(Scenario scenario){  // scenariolar icin calısıyor
 
     final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
 

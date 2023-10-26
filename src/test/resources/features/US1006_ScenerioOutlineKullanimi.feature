@@ -24,7 +24,7 @@
     And  sifre kutusuna yanlis "<sifre>" girer
     And giris yap butonuna tikar
     Then girdigin sifre yanlis yazi elementinin gorunur oldugunu test eder
-    And sayfayi kapatir
+    And Sayfayi kapatir
 
 
         Examples:

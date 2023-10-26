@@ -5,7 +5,7 @@
   # kullanici amazon anasayfasinda
   # kullanici "Nutella" icin arama yapar
   # sonuclarin "Nutella" icerdigini test eder
-  # sayfayi kapatir
+  # Sayfayi kapatir
 
 
 
@@ -22,4 +22,4 @@
       Given kullanici amazon anasayfasinda
       And kullanici "Nutella" icin arama yapar
       And sonuclarin "Nutella" icerdigini test eder
-      Then sayfayi kapatir
+      Then Sayfayi kapatir

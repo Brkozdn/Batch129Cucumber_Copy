@@ -20,7 +20,7 @@
     Given kullanici "amazonUrl" anasayfasinda
     Then kullanici "<istenenKelime>" icin arama yapar
     And sonuclarin "<istenenKelimeKontrol>" icerdigini test eder
-    And sayfayi kapatir
+    And Sayfayi kapatir
 
 
     Examples:
